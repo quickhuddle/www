@@ -1,0 +1,26 @@
+<div ng-controller="page-forgot">
+    <br>
+    <br>
+    <div class="uk-grid"> 
+        <div class="uk-width-1-1 uk-text-center">
+            <h1>Forgot your password?</h1>
+            <p>No worries! Enter your login email address below and we will send
+                <br>you a new temporary password.</p>
+ 
+            <form ng-submit="send()" name="aaaa" class="uk-form"> 
+                <fieldset>
+                    <div class="uk-form-row">
+                        <input type="text" name="email" ng-model="email" placeholder="Email" class="uk-form-width-medium" focus="true">
+                    </div>
+                    <div class="uk-form-row">
+                        <button id="signinButton" class="uk-button uk-button-primary uk-form-width-medium" type="submit" value="Submit">Send</button>
+                    </div>
+                    <div style="width:300px;display: inline-block;" ng-show="status==1" class="uk-alert uk-alert-success" ng-class="{'uk-animation-shake':status==1}">
+                         A temporary password has been sent to the email provided.</div>
+                    <br> Already a member? <a ui-sref="main.signin">Sign in</a>
+                    <br> Not a member? <a ui-sref="main.join">Join now</a>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

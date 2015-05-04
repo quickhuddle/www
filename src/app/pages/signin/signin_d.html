@@ -1,0 +1,52 @@
+<div ng-controller="page-signin">
+    <br>
+    <br>
+    <div class="uk-grid">
+
+        <div class="uk-width-1-1 uk-text-center">
+            <div ng-show="mode==0">
+                <h1>Sign in</h1>
+                <br>
+                <form ng-submit="signIn()" name="signin" class="uk-form">
+                    <fieldset>
+                        <div class="uk-form-row">
+                            <input ng-keydown="status=0" type="text" name="email" ng-model="email" placeholder="Email" class="uk-form-width-medium" focus="true">
+                        </div>
+                        <div class="uk-form-row">
+                            <input ng-keydown="status=0" type="password" name="password" ng-model="password" placeholder="Password" class="uk-form-width-medium">
+                        </div>
+                        <div class="uk-form-row">
+                            <button id="signinButton" class="uk-button uk-button-primary uk-form-width-medium" type="submit" value="Submit" ng-disabled="status==1"><i ng-show="status==1" class="uk-icon-spinner uk-icon-spin uk-margin-small-right"></i>{{buttonText}}</button>
+                        </div>
+                        <br><a ui-sref="main.forgot">Forgot my password</a>
+                        <br> Not a member? <a ui-sref="main.join">Join now</a>
+                        <br>
+                        <div style="width:300px;display: inline-block;" ng-show="status==2" class="uk-alert uk-alert-danger" ng-class="{'uk-animation-shake':status==2}">
+                            </i>{{errorMsg}}</div>
+                    </fieldset>
+                </form>
+            </div>
+            <div ng-show="mode==1">
+                <h1>Forgot your password?</h1>
+                <p>No worries! Enter your login email address below and we will send
+                    <br>you a link to reset your password.</p>
+                <br>
+                <form ng-submit="password()" name="passwordForm" class="uk-form">
+                    <fieldset>
+                        <div class="uk-form-row">
+                            <input type="text" name="email" ng-model="email" placeholder="Email" class="uk-form-width-medium">
+                        </div>
+                        <div class="uk-form-row">
+                            <button id="signinButton" class="uk-button uk-button-primary uk-form-width-medium" type="submit" value="Submit" ng-disabled="status==1">Send</button>
+                        </div>
+                        <br> Already a member? <a ng-click="mode=0">Sign in</a>
+                        <br> Not a member? <a ui-sref="main.join">Join now</a>
+                     </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

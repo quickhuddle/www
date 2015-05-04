@@ -1,0 +1,112 @@
+<div ng-controller="page-newhuddle">
+    <br>
+    <br>
+
+    <div class="uk-grid">
+        <div class="uk-width-1-1 uk-text-center">
+            <h1>Huddle Up!</h1>
+            <p>What type of huddle do you wish to create?</p>
+
+
+            <ul>
+                <li class="mike">
+
+                    <img src="img/activites/a1_button.png" style="border-radius: 10px;border:0px solid #B2B2B2" ng-click="go('nav.huddle')" />
+                    <br>Soccer
+
+                </li>
+                <li class="mike">
+
+                    <img src="img/activites/a2_button.png" style="border-radius: 10px;border:0px solid #B2B2B2" ng-click="go('nav.event')" />
+                    <br>Baseball
+
+                </li>
+                <li class="mike">
+
+                    <img src="img/activites/a3_button.png" style="border-radius: 10px;border:0px solid #B2B2B2" />
+
+                    <br>Football
+
+                </li>
+                <li class="mike">
+
+                    <img src="img/activites/a4_button.png" style="border-radius: 10px;border:0px solid #B2B2B2" ng-click="go('nav.huddle')" />
+                    <br>Hockey
+
+                </li>
+
+                <li class="mike">
+
+                    <img src="img/activites/a5_button.png" style="border-radius: 10px;border:0px solid #B2B2B2" ng-click="go('nav.event')" />
+                    <br>Baseketball
+
+                </li>
+                <li class="mike">
+
+                    <img src="img/activites/a6_button.png" style="border-radius: 10px;border:0px solid #B2B2B2" />
+
+                    <br>Softball
+
+                </li>
+                <li class="mike">
+
+                    <img src="img/activites/a7_button.png" style="border-radius: 10px;border:0px solid #B2B2B2" ng-click="go('nav.huddle')" />
+                    <br>Volleyball
+
+                </li>
+                <li class="mike">
+
+                    <img src="img/activites/a8_button.png" style="border-radius: 10px;border:0px solid #B2B2B2" ng-click="go('nav.event')" />
+                    <br>Tennis
+
+                </li>
+
+
+            </ul>
+<p>What time is your party starting?</p>
+            <form name="aaaa" class="uk-form">
+                <fieldset>
+                    <div class="uk-form-row">
+                        <input type="text" name="name" ng-model="email" placeholder="name" class="uk-form-width-medium">
+                    </div>
+                    <div class="uk-form-row">
+                    <div class="uk-form-icon">
+    <i class="uk-icon-calendar"></i>
+    <input type="text" name="date" placeholder="start date" data-uk-datepicker="{format:'MM-DD-YYYY'}" class="uk-form-width-medium">
+</div>
+                        
+                    </div>
+                    <div class="uk-form-row">
+          
+                        <input type="text" name="time" data-uk-timepicker="{format:'12h'}" style="width:100px"> to <input type="text" name="time" data-uk-timepicker="{format:'12h'}" style="width:100px">
+                    </div>
+
+
+                    <div class="uk-form-row">
+                        <button ng-click="save()" id="signinButton" class="uk-button uk-button-primary uk-form-width-medium" type="submit" value="Submit">Save</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+.mike {
+    width: 50px;
+    min-height: 50px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    zoom: 1;
+    *display: inline;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+}
+.mike > img {
+    width: 50px;
+    height: 50px;
+}
+</style>

@@ -1,0 +1,69 @@
+<div>
+    <br>
+    <div class="uk-grid">
+        <div class="uk-width-1-1 uk-text-center">
+            <h1>Huddle Up!</h1>
+            <div align="center">
+                <h3 style="margin-bottom: 0px" class="qh-actionTitle">What Type of huddle?</h3> The cool way to manage your sports team
+                <br>
+                <br>
+                <button class="uk-button" ng-click="setA(2);" type="button"><img style="width:75px;padding-top: 2px;padding-bottom:0px" src="/img/m1_56.jpg">
+                    <br><div class="qh-button-image">Organize a<br>Team</div></button>&nbsp;
+                <div ng-show="a==1" style="display:inline-block">
+                    <button class="uk-button" type="button"><img style="width:75px;padding-top: 2px;padding-bottom:0px" src="/img/m1_36.jpg">
+                        <br>
+                        <h3 style="margin-bottom: 0px" class="qh-actionTitle">Let's<br>Do Something!</h3></button>&nbsp;
+                    <button class="uk-button" type="button"><img style="width:75px;padding-top: 2px;padding-bottom:0px" src="/img/m1_37.jpg">
+                        <br>
+                        <h3 style="margin-bottom: 0px" class="qh-actionTitle">Let's<br>Keep in touch</h3></button>&nbsp;
+                    <button class="uk-button" type="button"><img style="width:75px;padding-top: 2px;padding-bottom:0px" src="/img/p2_75.jpg">
+                        <br>
+                        <h3 style="margin-bottom: 0px" class="qh-actionTitle">Organize a<br>Party</h3></button>
+                </div>
+                <br>
+                <br>
+                <div ng-show="a==2" align="center">
+                    <h3 style="margin-bottom: 0px" class="qh-actionTitle">What features will you need?</h3> You can add or remove features anytime!
+                    <br>
+                    <br>
+                    <button class="uk-button" type="button"><img style="width:45px;padding-top: 2px;padding-bottom:0px" src="/img/pg_5.jpg">
+                        <br>
+                        <h3 style="margin-bottom: 0px" class="qh-actionTitle">Schedule</h3></button>&nbsp;
+                    <button class="uk-button" type="button"><img style="width:45px;padding-top: 2px;padding-bottom:0px" src="/img/pg_2.jpg">
+                        <br>
+                        <h3 style="margin-bottom: 0px" class="qh-actionTitle">Car Pool</h3></button>&nbsp;
+                    <button class="uk-button" type="button"><img style="width:45px;padding-top: 2px;padding-bottom:0px" src="/img/pg_1.jpg">
+                        <br>
+                        <h3 style="margin-bottom: 0px" class="qh-actionTitle">Snack Sheet</h3></button>&nbsp;
+                    <button class="uk-button" type="button"><img style="width:45px;padding-top: 2px;padding-bottom:0px" src="/img/m1_21.jpg">
+                        <br>
+                        <h3 style="margin-bottom: 0px" class="qh-actionTitle">Grocery List</h3></button>
+                    <br>
+                    <br>
+                    <form class="uk-form">
+    <input type="" data-uk-datepicker="{format:'DD.MM.YYYY'}">
+</form>
+                </div>
+            </div>
+            <form ng-show="" name="aaaa" class="uk-form">
+                <fieldset>
+                    <div class="uk-form-row">
+                        <input type="text" name="name" ng-model="name" placeholder="name" class="uk-form-width-medium" focus="true">
+                    </div>
+                    <div class="uk-form-row">
+                        <input type="text" name="activity" ng-model="activity" placeholder="activity" class="uk-form-width-medium">
+                    </div>
+                    <div class="uk-form-row">
+                        <button ng-click="save()" id="signinButton" class="uk-button uk-form-width-medium uk-button-primary" type="submit" value="Submit">Start Huddle</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<style>
+.qh-button-image {
+    line-height: 20px;
+    margin: 5px 5px;
+    font-weight: normal; }
+</style>

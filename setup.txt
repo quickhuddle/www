@@ -1,0 +1,22 @@
+
+
+
+First Time Setup
+
+Install Sass - gem install sass
+Install grunt-cli globally - npm install -g grunt-cli
+Install bower globally - npm install -g bower
+Install grunt-war - npm install -g grunt-war --save-dev
+Install the console's NPM packages - npm install
+Install the console's Bower packages - bower install
+
+package.json = NPM Config File - Install Grunt and it's Dependensies
+GruntFile.js = Grunt config file
+bower.json   = Bower Config File - Installs required Scripts Frameworks
+
+
+
+npm install
+bower install
+
+Launch Grunt

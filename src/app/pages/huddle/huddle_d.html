@@ -1,0 +1,12 @@
+<div class="uk-container uk-container-center">
+<div ng-show="huddle.n">
+    <div class="uk-grid">
+        <div class="uk-width-1-1">
+            <br>
+            <img src="/img/activites/a{{huddle.a}}_icon.png" style="padding-right:8px;float:left;border-radius: 0px;border:0px solid #B2B2B2;width:30px;left:30px" />
+            <span style="font-size:27px;font-weight:bold">{{huddle.n}}</span>
+        </div>
+    </div>
+    <div ng-repeat="card in cards" ng-include="qh.system.cards[card.t].t"></div>
+</div>
+</div>

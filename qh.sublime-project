@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "src\\app"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "src\\css"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}

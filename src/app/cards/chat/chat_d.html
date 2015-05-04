@@ -1,0 +1,30 @@
+<div ng-controller="card-chat">
+    <span class="qh-actionTitle">CHAT:{{huddle.$id}}</span>
+    <div style="width:400px;height:500px;border: 1px solid #dddddd">
+        <ul class="qh-chat-list stagger">
+            <li ng-repeat="(key,val) in messages" ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}">
+                <article class="qh-chat">
+                    <header class="qh-chat-body">
+                        <img class="qh-chat-avatar" src="img/people/coach.jpg" width="50" height="50" alt="">
+                        <div class="qh-chat-content">
+                            <p><span style="font-weight:bold;">{{val.fn}}</span> - {{val.m}}</p>
+                        </div>
+                    </header>
+                </article>
+            </li>
+        </ul>
+    </div>
+    <div style="width:400px;height:100px;border: 1px solid #dddddd">
+        <article class="qh-chat">
+            <header class="qh-chat-input">
+                <img class="qh-chat-avatar" src="img/people/coach.jpg" width="50" height="50" alt="">
+                <div class="qh-chat-content">
+                    <form class="uk-form">
+                        <textarea ng-model="message" style="resize: none;height:50px" class="uk-width-1-1" type="text" placeholder=""></textarea>
+                    </form>
+                    <button ng-click="saveMsg();" class="uk-button uk-align-right" type="button" style="margin-top:5px">Post Message</button>
+                </div>
+            </header>
+        </article>
+    </div>
+</div>

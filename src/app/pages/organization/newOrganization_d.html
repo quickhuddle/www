@@ -1,0 +1,25 @@
+<div ng-controller="page-organization">
+    <br>
+    <br>
+
+    <div class="uk-grid">
+        <div class="uk-width-1-1 uk-text-center">
+            <h1>New Organizationn</h1>         
+            <br><br>
+            <form name="aaaa" class="uk-form">
+                <fieldset>
+                    <div class="uk-form-row">
+                        <input type="text" name="name" ng-model="name" placeholder="name" class="uk-form-width-medium" focus="true">
+                    </div>
+                    <div class="uk-form-row">
+                        <input type="text" name="activity" ng-model="activity" placeholder="activity" class="uk-form-width-medium" >
+                    </div>
+
+                    <div class="uk-form-row">
+                        <button ng-click="save()" id="signinButton" class="uk-button uk-form-width-medium" type="submit" value="Submit">Save</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

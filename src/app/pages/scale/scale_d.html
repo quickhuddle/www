@@ -1,0 +1,35 @@
+
+<div class="uk-container uk-container-center" ng-conroller="page-scale">
+<br><br>
+<h1>Scale</h1>
+<table class="uk-table uk-table-condensed" style="width:800px">
+    <caption>...</caption>
+    <thead>
+        <tr>
+            <th>Weight</th>
+            <th>Pounds</th>
+            <th>Less Calories</th>
+            <th>Daily Calories</th>
+            <th>Total Calories</th>
+            <th>Total Days</th>
+            <th>Jog Hours</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td>...</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr ng-repeat="a in scale">
+            <td>{{a.w}}</td>
+            <td>{{a.p}}</td>
+            <td>{{a.a}}</td>
+            <td>{{a.c}}</td>
+            <td>{{a.t}}</td>
+            <td>{{a.d}}</td>
+            <td>{{a.j}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

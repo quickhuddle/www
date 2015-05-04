@@ -1,0 +1,17 @@
+<ion-nav-view name="nav-view"></ion-nav-view>
+
+<ion-footer-bar class="bar-stable" style="height:50px">
+    <div class="button-bar">
+        <a class="qh-nav-button button button-icon icon ion-grid"  ng-click="go('dashboard')" ng-disabled="history.currentStateName() == 'OLD nav.dashboard'" ></a>
+        <a class="qh-nav-button button button-icon icon ion-help-buoy"   ng-click="go('back')"></a>
+        <a class="qh-nav-button button button-icon icon ion-arrow-left-a"   ng-click="go('back')" ng-disabled="!history.backView()"></a>
+        <a class="qh-nav-button button button-icon icon ion-star"  ng-click="go('smartnav')"></a>
+        <a class="qh-nav-button button button-icon icon ion-arrow-right-a"  ng-click="go('forward')" ng-disabled="!history.forwardView()"></a> 
+    </div>
+    <style>
+        .qh-nav-button
+        {   
+            color: #7e7e7e !important;
+        }
+    </style>
+</ion-footer-bar>

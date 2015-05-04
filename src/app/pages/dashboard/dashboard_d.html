@@ -1,0 +1,63 @@
+
+<div class="uk-container uk-container-center">
+<div>
+
+    <div class="uk-grid">
+        <div class="uk-width-1-1">
+
+<span class="qh-actionTitle">HEADLINES</span>
+
+  <span class="qh-actionTitle">MY HUDDLES</span>
+
+            <ul style="padding-left:0px">
+                <li class="mike" ng-repeat="(key,val) in user.huddles | orderBy: 'name'">
+                    <a ng-click="$state.go('main.huddle', {id: val.$id})">
+                        <img src="/img/activites/a{{val.a}}_button.png" style="border-radius: 8px;border:0px solid #B2B2B2" ng-click="go('nav.huddle')" />
+
+                    </a>
+                    <br>{{val.n}}
+
+                </li>
+            </ul>
+
+           <span class="qh-actionTitle">MY EVENTS</span>
+            <ul style="padding-left:0px">
+                <li class="mike" ng-repeat="(key,val) in user.events">
+                    <a ng-click="$state.go('main.event', {id: val.$id})">
+
+                        <img src="/img/activites/a{{val.a}}_icon.png" style="border-radius: 8px;border:0px solid #B2B2B2" />
+
+                    </a>
+                    <br>{{val.n}}
+                        <br>{{val.s}}
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+</div>
+</div>
+
+<style>
+.mike {
+    width: 40px;
+    min-height: 40px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    zoom: 1;
+    *display: inline;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+}
+.mike > a > img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 3px;
+}
+</style>

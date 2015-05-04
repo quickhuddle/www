@@ -1,0 +1,18 @@
+<div ng-controller="page-organization" ng-show="org.n">
+    <br>
+    <br>
+    <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+        <button class="uk-button">Add Social Card</button>
+        <div class="uk-dropdown">
+            <ul class="uk-nav uk-nav-dropdown">
+                <li ng-repeat="(key,val) in qh.system.cards"><a href="#" ng-click="addCard(key);">{{val.n}}</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="uk-grid">
+        <div class="uk-width-1-1"><img src="/img/activites/a{{huddle.a}}_icon.png" style="padding-right:10px;float:left;border-radius: 0px;border:0px solid #B2B2B2" ng-click="go('nav.huddle')" />
+            <h1>{{org.n}}</h1> Welcome to your new organization page
+        </div>
+    </div>
+</div>
+ 

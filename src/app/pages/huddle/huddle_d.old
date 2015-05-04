@@ -1,0 +1,91 @@
+<div>
+    <br>
+
+    <div class="uk-grid">
+
+        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+        <button class="uk-button">Add Social Card</button>
+        <div class="uk-dropdown">
+            <ul class="uk-nav uk-nav-dropdown">
+                <li ng-repeat="(key,val) in qh.system.cards"><a href="#" ng-click="addCard(key);">{{val.n}}</a></li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="uk-width-1-1"><img src="/img/activites/a{{huddle.a}}_icon.png" style="padding-right:10px;float:left;border-radius: 0px;border:0px solid #B2B2B2" ng-click="go('nav.huddle')" />
+            <h1>{{huddle.n}}</h1> Welcome to your new team page
+            <br>
+            <br> 
+            <h3>Next Game</h3>
+            <p>
+                Tonight at 3pm
+                <br> Walled Lake Middle School.
+                <br> Field #3
+            </p>
+            <br>
+            <br>
+                        <h3>Messages</h3>
+            <ul class="uk-comment-list">
+                <li ng-repeat="(key,val) in messages">
+
+                    <article class="uk-comment">
+                        <header class="uk-comment-header">
+                            <img class="uk-comment-avatar" src="" alt="">
+                            <h4 class="uk-comment-title">{{val.s}}</h4>
+                            <div class="uk-comment-meta">{{val.c}}</div>
+                        </header>
+                        <div class="uk-comment-body">{{val.c}}</div>
+                    </article>
+
+
+
+                </li>
+            </ul>
+
+            <form name="aaaa" class="uk-form">
+                <fieldset>
+                    <div class="uk-form-row">
+                        <input type="text" name="message" ng-model="message" placeholder="message" class="uk-form-width-medium" focus="true">
+                    </div>
+                    <div class="uk-form-row">
+                        <button ng-click="saveMessage()" id="signinButton" class="uk-button uk-button-primary uk-form-width-medium" type="submit" value="Submit">Post</button>
+                    </div>
+                </fieldset>
+            </form>
+            <h3>Roster</h3>
+
+            <div id="hot" style="padding-top:5px"></div>
+            <br>
+            <button class="uk-button" type="button">View More</button>
+            <br>
+            <br>
+            <h3>Schedule</h3>
+            <ul style="padding-left:0px">
+                <li class="mike" ng-repeat="(key,val) in events">
+                    <a ng-click="$state.go('main.event', {id: val.$id})">
+
+                        <img src="/img/activites/a{{val.a}}_icon.png" style="border-radius: 8px;border:0px solid #B2B2B2" ng-click="go('nav.huddle')" />
+
+                    </a>
+                    <br>{{val.n}}
+                    <br>{{val.s}}
+                </li> 
+            </ul>
+
+
+            <div style="padding-top:5px" id="hot2"></div>
+            <br>
+            <br>
+            <img src="img/original/pg_2.jpg" style="width:50px;padding-right:10px;">
+            <h3>Car Pool</h3> With Rose Adams, Monica Peets and Sharron Smith
+            <div style="padding-top:5px" id="hot3"></div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>

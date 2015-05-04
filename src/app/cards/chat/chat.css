@@ -1,0 +1,47 @@
+
+.qh-chat-list {
+    padding: 0;
+    list-style: none; 
+}
+
+.qh-chat-list .qh-msg + ul { 
+    margin: 25px 0 0 0;
+    list-style: none;  
+}
+
+.qh-chat-body {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+  bbbackground: #fafafa;
+  min-height: 50px;
+}
+
+.qh-chat-body p {
+margin-bottom: 0px;
+}
+
+.qh-chat-input {
+ 
+  padding: 10px;
+ 
+}
+
+.qh-chat-avatar {
+  float: left;
+}
+
+.qh-chat-content{
+  margin-left: 60px;
+}
+
+/* starting animation */
+.animate-me.ng-enter {
+   -webkit-transition: 3s linear all;
+   transition: 3s linear all;
+   color: green;
+}
+ 
+/* ending animation */
+.animate-me.ng-enter-active {
+    color: red;
+}

@@ -1,0 +1,233 @@
+
+
+/* Fonts
+ ========================================================================== */
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-light-webfont.woff') format('woff'),
+        url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+        url('../fonts/proximanova-light-webfont.svg#ProximaNovaLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-reg-webfont.eot');
+    src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-reg-webfont.woff') format('woff'),
+        url('../fonts/proximanova-reg-webfont.ttf') format('truetype'),
+        url('../fonts/proximanova-reg-webfont.svg#ProximaNovaReg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+html {
+    /*color: #7F8C8D;*/
+    
+    line-height: 1.5em;
+}
+body,h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0 0;
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    /*color: #7F8C8D;*/
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top:10px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+.uk-navbar {
+    background: white;
+    color: #444444;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+}
+.uk-icon-button {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    background: #f5f5f5;
+    line-height: 23px;
+    color: #444444;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #e7e7e7;
+    text-shadow: 0 1px 0 #ffffff;
+}
+.uk-dropdown {
+    webkit-box-shadow: 0 1px 13px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 13px rgba(0, 0, 0, .2);
+}
+.uk-modal {
+    background: rgba(0, 0, 0, 0.1);
+    /* 5 */
+    
+    opacity: 0;
+    -webkit-transition: opacity 0.1s linear;
+    transition: opacity 0.1s linear;
+}
+.uk-open > .uk-dropdown {
+    /* 1 */
+    
+    display: block;
+    /* 2 */
+    
+    -webkit-animation: uk-fade 0.01s ease-in-out;
+    animation: uk-fade 0.01s ease-in-out;
+    /* 3 */
+    
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.uk-form-password {
+    display: block;
+}
+.uk-modal-dialog {
+    /* 1 */
+    
+    position: relative;
+    /* 2 */
+    
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 60px auto;
+    padding: 20px;
+    width: 600px;
+    max-width: 100%;
+    max-width: calc(100% - 20px);
+    /* 3 */
+    
+    background: #ffffff;
+    /* 4 */
+    
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: none;
+    transition: none;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.uk-datepicker {
+    width: auto;
+    -webkit-animation: uk-fade 0.05s ease-in-out;
+    animation: uk-fade 0.0s ease-in-out;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.fadein, .fadeout {
+    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    -moz-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    -o-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+}
+.fadein.ng-hide-remove, .fadeout.ng-hide-add.ng-hide-add-active {
+    opacity: 0;
+    display: block !important;
+}
+.fadeout.ng-hide-add, .fadein.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
+    display: block !important;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.qh_card {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    overflow: hidden;
+    margin: 20px 10px;
+    border-radius: 2px;
+    background-color: #fff;
+    display: block;
+    border: 1px solid #EBEBEB;
+}
+.qh-breadcrumb {
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+
+html {
+  overflow-y: scroll;
+}
+
+
+ 
+.mike {
+    width: 50px;
+    min-height: 50px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    zoom: 1;
+    *display: inline;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+}
+.mike > a > img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 3px;
+}
+
+
+.qh-actionTitle {
+display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top:10px;
+margin-bottom:15px; 
+
+}
+
+
+.qh-eventheader { 
+
+display: block;
+font-size:36px;
+font-weight:bold;
+color:#b19cd9;
+ margin-top:20px;
+margin-bottom:20px;
+
+}
+
+.qh-eventText { 
+
+ 
+font-size:15px;
+ 
+
+
+}
+
+
+
+
+ 

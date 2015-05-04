@@ -1,0 +1,6 @@
+<br> quickfields Home
+<br>
+<ul class="uk-slideshow" data-uk-slideshow="{autoplay:true}">
+    <li><img src="img/backgrounds/BaseballBG.jpg" width="333" height="333" alt=""></li>
+</ul>
+<div class="uk-cover-background" style="height: 300px; background-image: url(img/backgrounds/BaseballBG.jpg);"></div>

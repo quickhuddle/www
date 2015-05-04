@@ -1,0 +1,14 @@
+{
+    "firebase": "quickfields",
+    "public": ".",
+    "ignore": [
+        "firebase.json",
+        "img/favicon.ico",
+        "**/.*",
+        "**/node_modules/**"
+    ],
+    "rewrites": [{
+        "source": "**",
+        "destination": "/index_d.html"
+    }]
+}
